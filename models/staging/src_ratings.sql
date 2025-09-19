@@ -1,3 +1,6 @@
+{{config(
+    materialized='table'
+)}}
 with D_ratings as(
     select * from movielens.raw.raw_ratings
 )
